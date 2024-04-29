@@ -1,0 +1,21 @@
+.dice {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .left-dice {
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+    }
+    .right-dice {
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+    }
+    p{
+        font-size: 30px;
+        text-align: center;
+    }
+  }
+  
