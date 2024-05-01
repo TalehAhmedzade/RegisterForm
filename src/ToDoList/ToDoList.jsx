@@ -26,18 +26,34 @@ const ToDoList = () => {
       setStateInput("");
     }
   };
-  const [isSorted,setIsSorted] = useState(true)
-  const handleArrangementButtonClick = () =>{
-    isSorted?setList(()=>list.sort((a,b)=>a.toLowerCase().charCodeAt(0) -b.toLowerCase().charCodeAt(0) )):setList(()=>list.sort((a,b)=>a.toLowerCase().charCodeAt(0) -b.toLowerCase().charCodeAt(0) ).reverse());
+  const [isSorted, setIsSorted] = useState(true);
+  const handleArrangementButtonClick = () => {
+    isSorted
+      ? setList(() =>
+          list.sort(
+            (a, b) =>
+              a.toLowerCase().charCodeAt(0) - b.toLowerCase().charCodeAt(0)
+          )
+        )
+      : setList(() =>
+          list
+            .sort(
+              (a, b) =>
+                a.toLowerCase().charCodeAt(0) - b.toLowerCase().charCodeAt(0)
+            )
+            .reverse()
+        );
     setIsSorted(!isSorted);
-    
-  }
+  };
   console.log(list);
   return (
     <div className="main">
       <div className="empty"></div>
       <h1>To Do List</h1>
-      <button onClick={handleArrangementButtonClick} className="arrangement-button">
+      <button
+        onClick={handleArrangementButtonClick}
+        className="arrangement-button"
+      >
         <img src="./ToDoList/Images/Group 38.png" alt="Sorting Logo" />
       </button>
       <div
@@ -69,7 +85,7 @@ const ToDoList = () => {
                 />
                 <button
                   className="delete-button"
-                  onClick={()=>handleRemoveButtonClick(input)}
+                  onClick={() => handleRemoveButtonClick(input)}
                 >
                   X
                 </button>
