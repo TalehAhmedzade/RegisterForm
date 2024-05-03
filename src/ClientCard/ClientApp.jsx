@@ -40,7 +40,6 @@ console.log(state.client)
   return (
     <div>
       {state.client !== null ? <CliendCard  name={state.client.name} phone={state.client.phone} card={state.client.card} /> : "loading..."}
-
     </div>
   );
 }

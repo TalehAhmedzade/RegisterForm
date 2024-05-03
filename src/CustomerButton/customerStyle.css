@@ -1,0 +1,23 @@
+.red{
+    background-color: red;
+}
+.customer-button{
+    position: relative;
+    button{
+        font-size: 16px;
+        border-radius: 40%;
+        width: 200px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    p{
+        border-radius: 10px;
+        position: absolute;
+        top:100px;
+        left: 20px;
+        background-color: gray;
+        border: 1px solid ;
+        width: 300px;
+        height: 40px;
+    }
+}
